@@ -1,0 +1,261 @@
+/* .sneaker-blue {
+    position: absolute;
+    top: 520px;
+    transform: rotate(35deg);
+    z-index: -1;
+    left: 90px;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #4d26e6;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.site-logo {
+    display: flex;
+}
+
+.logo-nike {
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.number-logo {
+    font-size: 18rem;
+    font-weight: 700;
+    font-family: 'Roboto';
+    color: #e987ab;
+}
+
+.sneaker {
+    position: absolute;
+    top: 135px;
+    left: -120px;
+}
+
+.shoe-backround {
+    margin-top: 205px;
+    margin-left: 150px;
+}
+
+.round {
+    width: 13px;
+    height: 13px;
+    margin: 0px 6px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #eea5c0;
+    cursor: pointer;
+}
+
+
+.round:hover{
+    background-color: #ffff;
+    transition: 0.5s ease;
+}
+
+.box__wrapper {
+    display: flex;
+    margin-top: 50px;
+}
+
+.logo-nike {
+    width: 50px;
+    height: 19px;
+}
+
+.hero-section {
+    position: relative;
+    left: 7px;
+    width: 510px;
+    height: 595px;
+    border-radius: 10px;
+    background-color: #e26796;
+}
+
+.site-main {
+    width: 560px;
+    height: 500px;
+    background-color: #ffff;
+    margin-top: 45px;
+    border-radius: 10px;
+}
+
+.famous-title {
+    font-size: 29px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    margin-left: 45px;
+    margin-top: 67px;
+    color: #000;
+}
+
+.bouncy {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.bouncy-feel {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    margin-left: 45px;
+    color: #000;
+}
+
+.bouncy-blr {
+    font-size: 13px;
+    margin-top: 4px;
+    color: #c5c5c4;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.bouncy-paragraph {
+    width: 380px;
+    height: 85px;
+    color: #5f5f5f;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-left: 45px;
+    margin-top: 35px;
+}
+
+.bouncy-amount {
+    display: flex;
+    gap: 48px;
+    margin-left: 45px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.learn {
+    color: #aaaaaa;
+    font-size: 16px;
+}
+
+.size-an {
+    color: #aaaaaa;
+    font-size: 22px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* HOVER */
+
+.hovereffects {
+    color: #aaaaaa;
+    font-size: 22px;
+    font-weight: 300;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    position: relative;
+    align-items:center;
+}
+
+.hovereffects:after {
+    pointer-events: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.hovereffects.effect-1:after {
+    top: -12px;
+    left: -8px;
+    padding: 10px;
+    box-shadow: 0 0 0 4px #e26796;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(.8);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transition: transform 0.2s;
+    transform: scale(.8);
+    opacity: 0;
+}
+/* Effect 1a */
+ .hovereffects.effect-1.sub-s:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #000;
+}
+
+.hovereffects.effect-1.sub-s:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transition: 0.5s ease;
+    opacity: 1;
+}
+
+
+.amount {
+    margin-left: 45px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.size-amount {
+    font-size: 16px;
+    color: #aaaaaa;
+    margin-top: -8px;
+}
+
+.amount-arrow {
+    margin-left: 20px;
+    text-align: center;
+    align-items:center;
+}
+
+.arrow-left {
+    cursor: pointer;
+}
+
+.arrow-right {
+    cursor: pointer;
+}
+
+.num {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+
+.amount-btn {
+    padding: 15px 85px;
+    border: none;
+    background-color: #e74c3c;
+    border-radius: 7px;
+    margin-left: 45px;
+    color: #ffff;
+    margin-top: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    -webkit-box-shadow: 15px 15px 19px 2px rgba(245, 163, 153, 0.21);
+    -moz-box-shadow: 15px 15px 19px 2px rgba(245, 163, 153, 0.21);
+    box-shadow: 15px 15px 19px 2px rgba(245, 163, 153, 0.21);
+}
